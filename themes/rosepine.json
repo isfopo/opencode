@@ -1,0 +1,253 @@
+{
+  "$schema": "https://opencode.ai/theme.json",
+  "defs": {
+    "rosepineBase": "#191724",
+    "rosepineSurface": "#1f1d2e",
+    "rosepineOverlay": "#26233a",
+    "rosepineMuted": "#6e6a86",
+    "rosepineSubtle": "#908caa",
+    "rosepineText": "#e0def4",
+    "rosepineLove": "#eb6f92",
+    "rosepineGold": "#f6c177",
+    "rosepineRose": "#ebbcba",
+    "rosepinePine": "#31748f",
+    "rosepineFoam": "#9ccfd8",
+    "rosepineIris": "#c4a7e7",
+    "rosepineHighlightLow": "#21202e",
+    "rosepineHighlightMed": "#403d52",
+    "rosepineHighlightHigh": "#524f67",
+    "rosepineBaseMoon": "#232136",
+    "rosepineSurfaceMoon": "#2a273f",
+    "rosepineOverlayMoon": "#393552",
+    "rosepineMutedMoon": "#6e6a86",
+    "rosepineSubtleMoon": "#908caa",
+    "rosepineTextMoon": "#e0def4",
+    "rosepineLoveMoon": "#eb6f92",
+    "rosepineGoldMoon": "#f6c177",
+    "rosepineRoseMoon": "#ea9a97",
+    "rosepinePineMoon": "#3e8fb0",
+    "rosepineFoamMoon": "#9ccfd8",
+    "rosepineIrisMoon": "#c4a7e7",
+    "rosepineHighlightLowMoon": "#2a283e",
+    "rosepineHighlightMedMoon": "#44415a",
+    "rosepineHighlightHighMoon": "#56526e",
+    "rosepineBaseDawn": "#faf4ed",
+    "rosepineSurfaceDawn": "#fffaf3",
+    "rosepineOverlayDawn": "#f2e9e1",
+    "rosepineMutedDawn": "#9893a5",
+    "rosepineSubtleDawn": "#797593",
+    "rosepineTextDawn": "#575279",
+    "rosepineLoveDawn": "#b4637a",
+    "rosepineGoldDawn": "#ea9d34",
+    "rosepineRoseDawn": "#d7827e",
+    "rosepinePineDawn": "#286983",
+    "rosepineFoamDawn": "#56949f",
+    "rosepineIrisDawn": "#907aa9",
+    "rosepineHighlightLowDawn": "#f4ede8",
+    "rosepineHighlightMedDawn": "#dfdad9",
+    "rosepineHighlightHighDawn": "#cecacd",
+    "transparent": "none"
+  },
+  "theme": {
+    "primary": {
+      "dark": "rosepinePine",
+      "light": "rosepinePineDawn"
+    },
+    "secondary": {
+      "dark": "rosepineIris",
+      "light": "rosepineIrisDawn"
+    },
+    "accent": {
+      "dark": "rosepineFoam",
+      "light": "rosepineFoamDawn"
+    },
+    "error": {
+      "dark": "rosepineLove",
+      "light": "rosepineLoveDawn"
+    },
+    "warning": {
+      "dark": "rosepineGold",
+      "light": "rosepineGoldDawn"
+    },
+    "success": {
+      "dark": "rosepineFoam",
+      "light": "rosepineFoamDawn"
+    },
+    "info": {
+      "dark": "rosepinePine",
+      "light": "rosepinePineDawn"
+    },
+    "text": {
+      "dark": "rosepineText",
+      "light": "rosepineTextDawn"
+    },
+    "textMuted": {
+      "dark": "rosepineMuted",
+      "light": "rosepineMutedDawn"
+    },
+    "background": {
+      "dark": "transparent",
+      "light": "transparent"
+    },
+    "backgroundPanel": {
+      "dark": "rosepineSurface",
+      "light": "rosepineSurfaceDawn"
+    },
+    "backgroundElement": {
+      "dark": "rosepineSurface",
+      "light": "rosepineOverlayDawn"
+    },
+    "border": {
+      "dark": "rosepineHighlightHigh",
+      "light": "rosepineHighlightHighDawn"
+    },
+    "borderActive": {
+      "dark": "rosepineHighlightMed",
+      "light": "rosepineHighlightMedDawn"
+    },
+    "borderSubtle": {
+      "dark": "rosepineHighlightLow",
+      "light": "rosepineHighlightLowDawn"
+    },
+    "diffAdded": {
+      "dark": "rosepineFoam",
+      "light": "rosepineFoamDawn"
+    },
+    "diffRemoved": {
+      "dark": "rosepineLove",
+      "light": "rosepineLoveDawn"
+    },
+    "diffContext": {
+      "dark": "rosepineMuted",
+      "light": "rosepineMutedDawn"
+    },
+    "diffHunkHeader": {
+      "dark": "rosepineMuted",
+      "light": "rosepineMutedDawn"
+    },
+    "diffHighlightAdded": {
+      "dark": "rosepineFoam",
+      "light": "rosepineFoamDawn"
+    },
+    "diffHighlightRemoved": {
+      "dark": "rosepineLove",
+      "light": "rosepineLoveDawn"
+    },
+    "diffAddedBg": {
+      "dark": "rosepineHighlightLow",
+      "light": "rosepineHighlightLowDawn"
+    },
+    "diffRemovedBg": {
+      "dark": "rosepineHighlightLow",
+      "light": "rosepineHighlightLowDawn"
+    },
+    "diffContextBg": {
+      "dark": "rosepineSurface",
+      "light": "rosepineSurfaceDawn"
+    },
+    "diffLineNumber": {
+      "dark": "rosepineSubtle",
+      "light": "rosepineSubtleDawn"
+    },
+    "diffAddedLineNumberBg": {
+      "dark": "rosepineHighlightLow",
+      "light": "rosepineHighlightLowDawn"
+    },
+    "diffRemovedLineNumberBg": {
+      "dark": "rosepineHighlightLow",
+      "light": "rosepineHighlightLowDawn"
+    },
+    "markdownText": {
+      "dark": "rosepineText",
+      "light": "rosepineTextDawn"
+    },
+    "markdownHeading": {
+      "dark": "rosepinePine",
+      "light": "rosepinePineDawn"
+    },
+    "markdownLink": {
+      "dark": "rosepineIris",
+      "light": "rosepineIrisDawn"
+    },
+    "markdownLinkText": {
+      "dark": "rosepineFoam",
+      "light": "rosepineFoamDawn"
+    },
+    "markdownCode": {
+      "dark": "rosepineGold",
+      "light": "rosepineGoldDawn"
+    },
+    "markdownBlockQuote": {
+      "dark": "rosepineMuted",
+      "light": "rosepineMutedDawn"
+    },
+    "markdownEmph": {
+      "dark": "rosepineGold",
+      "light": "rosepineGoldDawn"
+    },
+    "markdownStrong": {
+      "dark": "rosepineRose",
+      "light": "rosepineRoseDawn"
+    },
+    "markdownHorizontalRule": {
+      "dark": "rosepineMuted",
+      "light": "rosepineMutedDawn"
+    },
+    "markdownListItem": {
+      "dark": "rosepinePine",
+      "light": "rosepinePineDawn"
+    },
+    "markdownListEnumeration": {
+      "dark": "rosepineFoam",
+      "light": "rosepineFoamDawn"
+    },
+    "markdownImage": {
+      "dark": "rosepineIris",
+      "light": "rosepineIrisDawn"
+    },
+    "markdownImageText": {
+      "dark": "rosepineFoam",
+      "light": "rosepineFoamDawn"
+    },
+    "markdownCodeBlock": {
+      "dark": "rosepineText",
+      "light": "rosepineTextDawn"
+    },
+    "syntaxComment": {
+      "dark": "rosepineMuted",
+      "light": "rosepineMutedDawn"
+    },
+    "syntaxKeyword": {
+      "dark": "rosepinePine",
+      "light": "rosepinePineDawn"
+    },
+    "syntaxFunction": {
+      "dark": "rosepineFoam",
+      "light": "rosepineFoamDawn"
+    },
+    "syntaxVariable": {
+      "dark": "rosepineText",
+      "light": "rosepineTextDawn"
+    },
+    "syntaxString": {
+      "dark": "rosepineGold",
+      "light": "rosepineGoldDawn"
+    },
+    "syntaxNumber": {
+      "dark": "rosepineRose",
+      "light": "rosepineRoseDawn"
+    },
+    "syntaxType": {
+      "dark": "rosepineFoam",
+      "light": "rosepineFoamDawn"
+    },
+    "syntaxOperator": {
+      "dark": "rosepinePine",
+      "light": "rosepinePineDawn"
+    },
+    "syntaxPunctuation": {
+      "dark": "rosepineSubtle",
+      "light": "rosepineTextDawn"
+    }
+  }
+}
