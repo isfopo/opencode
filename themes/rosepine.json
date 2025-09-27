@@ -1,253 +1,253 @@
 {
   "$schema": "https://opencode.ai/theme.json",
   "defs": {
-    "Base": "#191724",
-    "Surface": "#1f1d2e",
-    "Overlay": "#26233a",
-    "Muted": "#6e6a86",
-    "Subtle": "#908caa",
-    "Text": "#e0def4",
-    "Love": "#eb6f92",
-    "Gold": "#f6c177",
-    "Rose": "#ebbcba",
-    "Pine": "#31748f",
-    "Foam": "#9ccfd8",
-    "Iris": "#c4a7e7",
-    "HighlightLow": "#21202e",
-    "HighlightMed": "#403d52",
-    "HighlightHigh": "#524f67",
-    "BaseMoon": "#232136",
-    "SurfaceMoon": "#2a273f",
-    "OverlayMoon": "#393552",
-    "MutedMoon": "#6e6a86",
-    "SubtleMoon": "#908caa",
-    "TextMoon": "#e0def4",
-    "LoveMoon": "#eb6f92",
-    "GoldMoon": "#f6c177",
-    "RoseMoon": "#ea9a97",
-    "PineMoon": "#3e8fb0",
-    "FoamMoon": "#9ccfd8",
-    "IrisMoon": "#c4a7e7",
-    "HighlightLowMoon": "#2a283e",
-    "HighlightMedMoon": "#44415a",
-    "HighlightHighMoon": "#56526e",
-    "BaseDawn": "#faf4ed",
-    "SurfaceDawn": "#fffaf3",
-    "OverlayDawn": "#f2e9e1",
-    "MutedDawn": "#9893a5",
-    "SubtleDawn": "#797593",
-    "TextDawn": "#575279",
-    "LoveDawn": "#b4637a",
-    "GoldDawn": "#ea9d34",
-    "RoseDawn": "#d7827e",
-    "PineDawn": "#286983",
-    "FoamDawn": "#56949f",
-    "IrisDawn": "#907aa9",
-    "HighlightLowDawn": "#f4ede8",
-    "HighlightMedDawn": "#dfdad9",
-    "HighlightHighDawn": "#cecacd",
+    "base": "#191724",
+    "surface": "#1f1d2e",
+    "overlay": "#26233a",
+    "muted": "#6e6a86",
+    "subtle": "#908caa",
+    "text": "#e0def4",
+    "love": "#eb6f92",
+    "gold": "#f6c177",
+    "rose": "#ebbcba",
+    "pine": "#31748f",
+    "foam": "#9ccfd8",
+    "iris": "#c4a7e7",
+    "highlightLow": "#21202e",
+    "highlightMed": "#403d52",
+    "highlightHigh": "#524f67",
+    "baseMoon": "#232136",
+    "surfaceMoon": "#2a273f",
+    "overlayMoon": "#393552",
+    "mutedMoon": "#6e6a86",
+    "subtleMoon": "#908caa",
+    "textMoon": "#e0def4",
+    "loveMoon": "#eb6f92",
+    "goldMoon": "#f6c177",
+    "roseMoon": "#ea9a97",
+    "pineMoon": "#3e8fb0",
+    "foamMoon": "#9ccfd8",
+    "irisMoon": "#c4a7e7",
+    "highlightLowMoon": "#2a283e",
+    "highlightMedMoon": "#44415a",
+    "highlightHighMoon": "#56526e",
+    "baseDawn": "#faf4ed",
+    "surfaceDawn": "#fffaf3",
+    "overlayDawn": "#f2e9e1",
+    "mutedDawn": "#9893a5",
+    "subtleDawn": "#797593",
+    "textDawn": "#575279",
+    "loveDawn": "#b4637a",
+    "goldDawn": "#ea9d34",
+    "roseDawn": "#d7827e",
+    "pineDawn": "#286983",
+    "foamDawn": "#56949f",
+    "irisDawn": "#907aa9",
+    "highlightLowDawn": "#f4ede8",
+    "highlightMedDawn": "#dfdad9",
+    "highlightHighDawn": "#cecacd",
     "transparent": "none"
   },
   "theme": {
     "primary": {
-      "dark": "Pine",
-      "light": "PineDawn"
+      "dark": "pine",
+      "light": "pineDawn"
     },
     "secondary": {
-      "dark": "Iris",
-      "light": "IrisDawn"
+      "dark": "iris",
+      "light": "irisDawn"
     },
     "accent": {
-      "dark": "Foam",
-      "light": "FoamDawn"
+      "dark": "foam",
+      "light": "foamDawn"
     },
     "error": {
-      "dark": "Love",
-      "light": "LoveDawn"
+      "dark": "love",
+      "light": "loveDawn"
     },
     "warning": {
-      "dark": "Gold",
-      "light": "GoldDawn"
+      "dark": "gold",
+      "light": "goldDawn"
     },
     "success": {
-      "dark": "Foam",
-      "light": "FoamDawn"
+      "dark": "foam",
+      "light": "foamDawn"
     },
     "info": {
-      "dark": "Pine",
-      "light": "PineDawn"
+      "dark": "pine",
+      "light": "pineDawn"
     },
     "text": {
-      "dark": "Text",
-      "light": "TextDawn"
+      "dark": "text",
+      "light": "textDawn"
     },
     "textMuted": {
-      "dark": "Muted",
-      "light": "MutedDawn"
+      "dark": "muted",
+      "light": "mutedDawn"
     },
     "background": {
       "dark": "transparent",
       "light": "transparent"
     },
     "backgroundPanel": {
-      "dark": "Surface",
-      "light": "SurfaceDawn"
+      "dark": "surface",
+      "light": "surfaceDawn"
     },
     "backgroundElement": {
-      "dark": "Surface",
-      "light": "OverlayDawn"
+      "dark": "surface",
+      "light": "overlayDawn"
     },
     "border": {
-      "dark": "HighlightHigh",
-      "light": "HighlightHighDawn"
+      "dark": "highlightHigh",
+      "light": "highlightHighDawn"
     },
     "borderActive": {
-      "dark": "HighlightMed",
-      "light": "HighlightMedDawn"
+      "dark": "highlightMed",
+      "light": "highlightMedDawn"
     },
     "borderSubtle": {
-      "dark": "HighlightLow",
-      "light": "HighlightLowDawn"
+      "dark": "highlightLow",
+      "light": "highlightLowDawn"
     },
     "diffAdded": {
-      "dark": "Foam",
-      "light": "FoamDawn"
+      "dark": "foam",
+      "light": "foamDawn"
     },
     "diffRemoved": {
-      "dark": "Love",
-      "light": "LoveDawn"
+      "dark": "love",
+      "light": "loveDawn"
     },
     "diffContext": {
-      "dark": "Muted",
-      "light": "MutedDawn"
+      "dark": "muted",
+      "light": "mutedDawn"
     },
     "diffHunkHeader": {
-      "dark": "Muted",
-      "light": "MutedDawn"
+      "dark": "muted",
+      "light": "mutedDawn"
     },
     "diffHighlightAdded": {
-      "dark": "Foam",
-      "light": "FoamDawn"
+      "dark": "foam",
+      "light": "foamDawn"
     },
     "diffHighlightRemoved": {
-      "dark": "Love",
-      "light": "LoveDawn"
+      "dark": "love",
+      "light": "loveDawn"
     },
     "diffAddedBg": {
-      "dark": "HighlightLow",
-      "light": "HighlightLowDawn"
+      "dark": "highlightLow",
+      "light": "highlightLowDawn"
     },
     "diffRemovedBg": {
-      "dark": "HighlightLow",
-      "light": "HighlightLowDawn"
+      "dark": "highlightLow",
+      "light": "highlightLowDawn"
     },
     "diffContextBg": {
-      "dark": "Surface",
-      "light": "SurfaceDawn"
+      "dark": "surface",
+      "light": "surfaceDawn"
     },
     "diffLineNumber": {
-      "dark": "Subtle",
-      "light": "SubtleDawn"
+      "dark": "subtle",
+      "light": "subtleDawn"
     },
     "diffAddedLineNumberBg": {
-      "dark": "HighlightLow",
-      "light": "HighlightLowDawn"
+      "dark": "highlightLow",
+      "light": "highlightLowDawn"
     },
     "diffRemovedLineNumberBg": {
-      "dark": "HighlightLow",
-      "light": "HighlightLowDawn"
+      "dark": "highlightLow",
+      "light": "highlightLowDawn"
     },
     "markdownText": {
-      "dark": "Text",
-      "light": "TextDawn"
+      "dark": "text",
+      "light": "textDawn"
     },
     "markdownHeading": {
-      "dark": "Pine",
-      "light": "PineDawn"
+      "dark": "pine",
+      "light": "pineDawn"
     },
     "markdownLink": {
-      "dark": "Iris",
-      "light": "IrisDawn"
+      "dark": "iris",
+      "light": "irisDawn"
     },
     "markdownLinkText": {
-      "dark": "Foam",
-      "light": "FoamDawn"
+      "dark": "foam",
+      "light": "foamDawn"
     },
     "markdownCode": {
-      "dark": "Gold",
-      "light": "GoldDawn"
+      "dark": "gold",
+      "light": "goldDawn"
     },
     "markdownBlockQuote": {
-      "dark": "Muted",
-      "light": "MutedDawn"
+      "dark": "muted",
+      "light": "mutedDawn"
     },
     "markdownEmph": {
-      "dark": "Gold",
-      "light": "GoldDawn"
+      "dark": "gold",
+      "light": "goldDawn"
     },
     "markdownStrong": {
-      "dark": "Rose",
-      "light": "RoseDawn"
+      "dark": "rose",
+      "light": "roseDawn"
     },
     "markdownHorizontalRule": {
-      "dark": "Muted",
-      "light": "MutedDawn"
+      "dark": "muted",
+      "light": "mutedDawn"
     },
     "markdownListItem": {
-      "dark": "Pine",
-      "light": "PineDawn"
+      "dark": "pine",
+      "light": "pineDawn"
     },
     "markdownListEnumeration": {
-      "dark": "Foam",
-      "light": "FoamDawn"
+      "dark": "foam",
+      "light": "foamDawn"
     },
     "markdownImage": {
-      "dark": "Iris",
-      "light": "IrisDawn"
+      "dark": "iris",
+      "light": "irisDawn"
     },
     "markdownImageText": {
-      "dark": "Foam",
-      "light": "FoamDawn"
+      "dark": "foam",
+      "light": "foamDawn"
     },
     "markdownCodeBlock": {
-      "dark": "Text",
-      "light": "TextDawn"
+      "dark": "text",
+      "light": "textDawn"
     },
     "syntaxComment": {
-      "dark": "Muted",
-      "light": "MutedDawn"
+      "dark": "muted",
+      "light": "mutedDawn"
     },
     "syntaxKeyword": {
-      "dark": "Pine",
-      "light": "PineDawn"
+      "dark": "pine",
+      "light": "pineDawn"
     },
     "syntaxFunction": {
-      "dark": "Foam",
-      "light": "FoamDawn"
+      "dark": "foam",
+      "light": "foamDawn"
     },
     "syntaxVariable": {
-      "dark": "Text",
-      "light": "TextDawn"
+      "dark": "text",
+      "light": "textDawn"
     },
     "syntaxString": {
-      "dark": "Gold",
-      "light": "GoldDawn"
+      "dark": "gold",
+      "light": "goldDawn"
     },
     "syntaxNumber": {
-      "dark": "Rose",
-      "light": "RoseDawn"
+      "dark": "rose",
+      "light": "roseDawn"
     },
     "syntaxType": {
-      "dark": "Foam",
-      "light": "FoamDawn"
+      "dark": "foam",
+      "light": "foamDawn"
     },
     "syntaxOperator": {
-      "dark": "Pine",
-      "light": "PineDawn"
+      "dark": "pine",
+      "light": "pineDawn"
     },
     "syntaxPunctuation": {
-      "dark": "Subtle",
-      "light": "TextDawn"
+      "dark": "subtle",
+      "light": "textDawn"
     }
   }
 }
