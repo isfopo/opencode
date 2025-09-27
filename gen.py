@@ -24,11 +24,6 @@ config ={
       "type": "remote",
       "enabled": True
     },
-    "semgrep": {
-      "url": "https://mcp.semgrep.ai/sse",
-      "type": "remote",
-      "enabled": True
-    },
     "github": {
       "url": "https://api.githubcopilot.com/mcp/",
       "type": "remote",
