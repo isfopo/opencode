@@ -8,6 +8,7 @@ Start working on issue $ARGUMENTS in the current repository.
 - [ ] Create a new branch from `develop` that is linked to this issue
 - [ ] Plan out a solution to the issue
 - [ ] Implement the solution
+- [ ] Write tests if testing is setup.
 - [ ] Review the solution
 - [ ] Check types if applicable
 - [ ] Run linter and fix any errors or issues in the code
