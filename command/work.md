@@ -10,9 +10,7 @@ Start working on issue $ARGUMENTS in the current repository.
 - [ ] Implement the solution
 - [ ] Write tests if testing is setup.
 - [ ] Review the solution
-- [ ] Check types if applicable
-- [ ] Run linter and fix any errors or issues in the code
-- [ ] Test the solution
+- [ ] Run QA audit with @assurance subagent
 - [ ] Create a pull request
 
 Create a new issue if any problem arises that is out of scope and not accounted for in another issue.
