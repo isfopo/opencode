@@ -1,5 +1,5 @@
 import json
-from secrets import GITHUB_PAT
+from secrets import GITHUB_PAT, BRIGHT_DATA_TOKEN
 
 config ={
   "$schema": "https://opencode.ai/config.json",
@@ -36,6 +36,16 @@ config ={
       "type": "local",
       "command": ["npx", "@playwright/mcp@latest"],
       "enabled": True,
+    },
+    "xcode": {
+      "type": "remote",
+      "url": f"https://mcp.brightdata.com/mcp?token={BRIGHT_DATA_TOKEN}",
+      "enabled": True,
+    },
+    "ios-simulator": {
+        "type": "local",
+        "command": ["npx", "-y", "ios-simulator-mcp"],
+        "enabled": True,
     }
   },
 }
