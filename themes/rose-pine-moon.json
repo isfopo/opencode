@@ -50,203 +50,203 @@
   },
   "theme": {
     "primary": {
-      "dark": "Pine",
+      "dark": "PineMoon",
       "light": "PineDawn"
     },
     "secondary": {
-      "dark": "Iris",
+      "dark": "IrisMoon",
       "light": "IrisDawn"
     },
     "accent": {
-      "dark": "Foam",
+      "dark": "FoamMoon",
       "light": "FoamDawn"
     },
     "error": {
-      "dark": "Love",
+      "dark": "LoveMoon",
       "light": "LoveDawn"
     },
     "warning": {
-      "dark": "Gold",
+      "dark": "GoldMoon",
       "light": "GoldDawn"
     },
     "success": {
-      "dark": "Foam",
+      "dark": "FoamMoon",
       "light": "FoamDawn"
     },
     "info": {
-      "dark": "Pine",
+      "dark": "PineMoon",
       "light": "PineDawn"
     },
     "text": {
-      "dark": "Text",
+      "dark": "TextMoon",
       "light": "TextDawn"
     },
     "textMuted": {
-      "dark": "Muted",
+      "dark": "MutedMoon",
       "light": "MutedDawn"
     },
     "background": {
-      "dark": "transparent",
-      "light": "transparent"
+      "dark": "BaseMoon",
+      "light": "BaseDawn"
     },
     "backgroundPanel": {
-      "dark": "Surface",
+      "dark": "SurfaceMoon",
       "light": "SurfaceDawn"
     },
     "backgroundElement": {
-      "dark": "Surface",
+      "dark": "OverlayMoon",
       "light": "OverlayDawn"
     },
     "border": {
-      "dark": "HighlightHigh",
+      "dark": "HighlightHighMoon",
       "light": "HighlightHighDawn"
     },
     "borderActive": {
-      "dark": "HighlightMed",
+      "dark": "HighlightMedMoon",
       "light": "HighlightMedDawn"
     },
     "borderSubtle": {
-      "dark": "HighlightLow",
+      "dark": "HighlightLowMoon",
       "light": "HighlightLowDawn"
     },
     "diffAdded": {
-      "dark": "Foam",
+      "dark": "FoamMoon",
       "light": "FoamDawn"
     },
     "diffRemoved": {
-      "dark": "Love",
+      "dark": "LoveMoon",
       "light": "LoveDawn"
     },
     "diffContext": {
-      "dark": "Muted",
+      "dark": "MutedMoon",
       "light": "MutedDawn"
     },
     "diffHunkHeader": {
-      "dark": "Muted",
+      "dark": "MutedMoon",
       "light": "MutedDawn"
     },
     "diffHighlightAdded": {
-      "dark": "Foam",
+      "dark": "FoamMoon",
       "light": "FoamDawn"
     },
     "diffHighlightRemoved": {
-      "dark": "Love",
+      "dark": "LoveMoon",
       "light": "LoveDawn"
     },
     "diffAddedBg": {
-      "dark": "HighlightLow",
+      "dark": "HighlightLowMoon",
       "light": "HighlightLowDawn"
     },
     "diffRemovedBg": {
-      "dark": "HighlightLow",
+      "dark": "HighlightLowMoon",
       "light": "HighlightLowDawn"
     },
     "diffContextBg": {
-      "dark": "Surface",
+      "dark": "SurfaceMoon",
       "light": "SurfaceDawn"
     },
     "diffLineNumber": {
-      "dark": "Subtle",
+      "dark": "SubtleMoon",
       "light": "SubtleDawn"
     },
     "diffAddedLineNumberBg": {
-      "dark": "HighlightLow",
+      "dark": "HighlightLowMoon",
       "light": "HighlightLowDawn"
     },
     "diffRemovedLineNumberBg": {
-      "dark": "HighlightLow",
+      "dark": "HighlightLowMoon",
       "light": "HighlightLowDawn"
     },
     "markdownText": {
-      "dark": "Text",
+      "dark": "TextMoon",
       "light": "TextDawn"
     },
     "markdownHeading": {
-      "dark": "Pine",
+      "dark": "PineMoon",
       "light": "PineDawn"
     },
     "markdownLink": {
-      "dark": "Iris",
+      "dark": "IrisMoon",
       "light": "IrisDawn"
     },
     "markdownLinkText": {
-      "dark": "Foam",
+      "dark": "FoamMoon",
       "light": "FoamDawn"
     },
     "markdownCode": {
-      "dark": "Gold",
+      "dark": "GoldMoon",
       "light": "GoldDawn"
     },
     "markdownBlockQuote": {
-      "dark": "Muted",
+      "dark": "MutedMoon",
       "light": "MutedDawn"
     },
     "markdownEmph": {
-      "dark": "Gold",
+      "dark": "GoldMoon",
       "light": "GoldDawn"
     },
     "markdownStrong": {
-      "dark": "Rose",
+      "dark": "RoseMoon",
       "light": "RoseDawn"
     },
     "markdownHorizontalRule": {
-      "dark": "Muted",
+      "dark": "MutedMoon",
       "light": "MutedDawn"
     },
     "markdownListItem": {
-      "dark": "Pine",
+      "dark": "PineMoon",
       "light": "PineDawn"
     },
     "markdownListEnumeration": {
-      "dark": "Foam",
+      "dark": "FoamMoon",
       "light": "FoamDawn"
     },
     "markdownImage": {
-      "dark": "Iris",
+      "dark": "IrisMoon",
       "light": "IrisDawn"
     },
     "markdownImageText": {
-      "dark": "Foam",
+      "dark": "FoamMoon",
       "light": "FoamDawn"
     },
     "markdownCodeBlock": {
-      "dark": "Text",
+      "dark": "TextMoon",
       "light": "TextDawn"
     },
     "syntaxComment": {
-      "dark": "Muted",
+      "dark": "MutedMoon",
       "light": "MutedDawn"
     },
     "syntaxKeyword": {
-      "dark": "Pine",
+      "dark": "PineMoon",
       "light": "PineDawn"
     },
     "syntaxFunction": {
-      "dark": "Foam",
+      "dark": "FoamMoon",
       "light": "FoamDawn"
     },
     "syntaxVariable": {
-      "dark": "Text",
+      "dark": "TextMoon",
       "light": "TextDawn"
     },
     "syntaxString": {
-      "dark": "Gold",
+      "dark": "GoldMoon",
       "light": "GoldDawn"
     },
     "syntaxNumber": {
-      "dark": "Rose",
+      "dark": "RoseMoon",
       "light": "RoseDawn"
     },
     "syntaxType": {
-      "dark": "Foam",
+      "dark": "FoamMoon",
       "light": "FoamDawn"
     },
     "syntaxOperator": {
-      "dark": "Pine",
+      "dark": "PineMoon",
       "light": "PineDawn"
     },
     "syntaxPunctuation": {
-      "dark": "Subtle",
+      "dark": "SubtleMoon",
       "light": "TextDawn"
     }
   }

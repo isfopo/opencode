@@ -37,14 +37,19 @@ config ={
       "command": ["npx", "@playwright/mcp@latest"],
       "enabled": True,
     },
+    "mermaid": {
+      "type": "local",
+      "command": ["npx", "-y", "mcp-mermaid"],
+      "enabled": True,
+    },
     "xcode": {
       "type": "remote",
       "url": f"https://mcp.brightdata.com/mcp?token={BRIGHT_DATA_TOKEN}",
       "enabled": True,
     },
-    "ios-simulator": {
+    "mobilenext": {
         "type": "local",
-        "command": ["npx", "-y", "ios-simulator-mcp"],
+        "command": ["npx", "-y", "@mobilenext/mobile-mcp@latest"],
         "enabled": True,
     }
   },
