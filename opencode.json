@@ -1,0 +1,91 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "chrome-devtools": {
+      "command": ["npx", "-y", "chrome-devtools-mcp@latest"],
+      "enabled": true,
+      "type": "local"
+    },
+    "cloudflare-bindings": {
+      "enabled": true,
+      "type": "remote",
+      "url": "https://bindings.mcp.cloudflare.com/mcp"
+    },
+    "cloudflare-documentation": {
+      "enabled": true,
+      "type": "remote",
+      "url": "https://docs.mcp.cloudflare.com/mcp"
+    },
+    "cloudflare-observability": {
+      "enabled": true,
+      "type": "remote",
+      "url": "https://observability.mcp.cloudflare.com/mcp"
+    },
+    "context7": {
+      "enabled": true,
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp"
+    },
+    "deep-wiki": {
+      "enabled": true,
+      "type": "remote",
+      "url": "https://mcp.deepwiki.com/mcp"
+    },
+    "fetch": {
+      "enabled": true,
+      "type": "remote",
+      "url": "https://remote.mcpservers.org/fetch/mcp"
+    },
+    "github": {
+      "enabled": true,
+      "headers": {
+        "Authorization": "Bearer {env:GITHUB_PAT}"
+      },
+      "type": "remote",
+      "url": "https://api.githubcopilot.com/mcp/"
+    },
+    "homebrew": {
+      "command": ["brew", "mcp-server"],
+      "enabled": true,
+      "type": "local"
+    },
+    "mermaid": {
+      "command": ["npx", "-y", "mcp-mermaid"],
+      "enabled": true,
+      "type": "local"
+    },
+    "mobilenext": {
+      "command": ["npx", "-y", "@mobilenext/mobile-mcp@latest"],
+      "enabled": true,
+      "type": "local"
+    },
+    "playwright": {
+      "command": ["npx", "@playwright/mcp@latest"],
+      "enabled": true,
+      "type": "local"
+    },
+    "sequential-thinking": {
+      "enabled": true,
+      "type": "remote",
+      "url": "https://remote.mcpservers.org/sequentialthinking/mcp"
+    }
+  },
+  "provider": {
+    "ollama": {
+      "models": {
+        "glm-5:cloud": {
+          "_launch": true,
+          "name": "glm-5:cloud"
+        },
+        "qwen3-coder": {
+          "name": "qwen3-coder"
+        }
+      },
+      "name": "Ollama",
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "baseURL": "http://localhost:11434/v1"
+      }
+    }
+  }
+}
