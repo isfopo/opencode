@@ -1,5 +1,6 @@
 {
   "$schema": "https://opencode.ai/config.json",
+  "provider": {},
   "mcp": {
     "chrome-devtools": {
       "command": ["npx", "-y", "chrome-devtools-mcp@latest"],
@@ -31,19 +32,6 @@
       "type": "remote",
       "url": "https://mcp.deepwiki.com/mcp"
     },
-    "fetch": {
-      "enabled": true,
-      "type": "remote",
-      "url": "https://remote.mcpservers.org/fetch/mcp"
-    },
-    "github": {
-      "enabled": true,
-      "headers": {
-        "Authorization": "Bearer {env:GITHUB_PAT}"
-      },
-      "type": "remote",
-      "url": "https://api.githubcopilot.com/mcp/"
-    },
     "homebrew": {
       "command": ["brew", "mcp-server"],
       "enabled": true,
@@ -65,26 +53,19 @@
       "type": "local"
     },
     "sequential-thinking": {
-      "enabled": true,
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "enabled": true
+    },
+    "github": {
       "type": "remote",
-      "url": "https://remote.mcpservers.org/sequentialthinking/mcp"
-    }
-  },
-  "provider": {
-    "ollama": {
-      "models": {
-        "glm-5:cloud": {
-          "_launch": true,
-          "name": "glm-5:cloud"
-        },
-        "qwen3-coder": {
-          "name": "qwen3-coder"
-        }
-      },
-      "name": "Ollama",
-      "npm": "@ai-sdk/openai-compatible",
-      "options": {
-        "baseURL": "http://localhost:11434/v1"
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": "Bearer {env:GITHUB_PAT}"
       }
     }
   }
