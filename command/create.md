@@ -1,16 +1,20 @@
 ---
-description: Create a new repo and create the first issues
+description: Create a new repo and set up the first issues
 agent: manager
 ---
 
-Publish a new repo called "$ARGUMENTS".
-Create README.md that explains the project.
-Create a "develop" branch and make it the default branch.
+Create a new repository called "$ARGUMENTS" and set it up with a solid foundation for development.
 
-Create issues from the plan above, creating epic and then related tasks as subtasks.
-Both the epics and tasks should have a detailed description and reiterate the technical details.
+- [ ] Create the repository on GitHub with a clear description
+- [ ] Initialize with a README.md that explains the project's purpose, tech stack, and how to get started
+- [ ] Create a `develop` branch and set it as the default branch
+- [ ] Set up branch protection rules if applicable
+- [ ] Plan out the initial set of epics and tasks based on the project scope
+- [ ] Create epic issues with detailed descriptions covering the technical approach
+- [ ] Create task issues as sub-issues under each epic, with clear acceptance criteria
+- [ ] Clone the repo locally and navigate to it
 
-Use this template:
+Use this template for each issue:
 
 ```md
 ---
@@ -34,4 +38,10 @@ Describe how this feature could be implemented.
 Add any relevant screenshots, links, or resources.
 ```
 
-Then clone the repo and navigate to it.
+Epics should be broad milestones (e.g., "Project Setup", "Core Feature", "Testing & QA"). Tasks under each epic should be specific, actionable, and include:
+- Technical details and implementation notes
+- Estimated complexity (low/medium/high)
+- Dependencies on other tasks
+- Clear acceptance criteria
+
+If $ARGUMENTS includes a project description or tech stack, use that to inform the repo setup and initial issues.
