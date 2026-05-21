@@ -1,6 +1,7 @@
 ---
 description: Commit and push current work with a well-crafted commit message
 agent: committer
+model: opencode-go/deepseek-v4-flash
 ---
 
 Commit the current work and push it to the remote repository.
@@ -10,7 +11,6 @@ Commit the current work and push it to the remote repository.
 - [ ] Determine the correct conventional commit type (feat, fix, docs, style, refactor, test, chore, perf, ci) based on the nature of the changes
 - [ ] Write a commit message that explains WHY the change was made, not just WHAT changed — the diff already shows what changed
 - [ ] Stage the appropriate files and create the commit
-- [ ] Push to the remote branch
 
 Commit message rules:
 - Subject line: 50 characters or less, imperative mood ("add" not "added")
