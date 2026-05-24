@@ -7,6 +7,11 @@
       "enabled": true,
       "type": "local"
     },
+    "cloudflare": {
+      "enabled": true,
+      "type": "remote",
+      "url": "https://mcp.cloudflare.com/mcp"
+    },
     "cloudflare-bindings": {
       "enabled": true,
       "type": "remote",
@@ -51,15 +56,6 @@
       "command": ["npx", "@playwright/mcp@latest"],
       "enabled": true,
       "type": "local"
-    },
-    "sequential-thinking": {
-      "type": "local",
-      "command": [
-        "npx",
-        "-y",
-        "@modelcontextprotocol/server-sequential-thinking"
-      ],
-      "enabled": true
     },
     "github": {
       "type": "remote",
