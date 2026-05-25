@@ -71,3 +71,4 @@ When the loop completes, produce a summary:
 - Maximum 10 iterations — if concerns persist beyond this, summarize the remaining issues and ask the human how to proceed
 - Each iteration should be smaller than the last — if the same issues keep recurring, escalate
 - Never silently dismiss a concern — every finding must be either fixed, explicitly deferred with approval, or escalated
+- Out of scope concerns should be formed into new issues using `/issue`
