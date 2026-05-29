@@ -5,7 +5,7 @@ agent: critic
 
 Review PR $ARGUMENTS thoroughly. Evaluate the code for correctness, quality, maintainability, and adherence to project conventions. Be constructive and specific — every comment should explain why something is an issue and suggest a fix.
 
-- [ ] Fetch the PR details, diff, and description
+- [ ] Fetch the PR details, diff, and description using `gh` cli
 - [ ] Understand the PR's purpose and what problem it solves
 - [ ] Review the diff for correctness — logic errors, edge cases, off-by-one errors
 - [ ] Check for security concerns — input validation, injection risks, data exposure
