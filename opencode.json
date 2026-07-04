@@ -1,6 +1,19 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "provider": {},
+  "provider": {
+    "manifest": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Manifest",
+      "options": {
+        "baseURL": "https://router.lhun.net/v1"
+      },
+      "models": {
+        "auto": {
+          "name": "Manifest Auto"
+        }
+      }
+    }
+  },
   "mcp": {
     "chrome-devtools": {
       "command": ["npx", "-y", "chrome-devtools-mcp@latest"],
