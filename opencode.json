@@ -63,6 +63,10 @@
       "headers": {
         "Authorization": "Bearer {env:GITHUB_PAT}"
       }
+    },
+    "npmsentinel": {
+      "type": "local",
+      "command": ["npx", "-y", "@nekzus/mcp-server@latest"]
     }
   }
 }
