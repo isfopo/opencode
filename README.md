@@ -101,3 +101,76 @@ Or use the web interface:
 ```bash
 opencode web
 ```
+
+## Auto-Update on Launch
+
+OpenCode doesn't have built-in pre-initialization hooks, but you can create a shell wrapper that automatically pulls the latest configuration before starting.
+
+### Zsh (macOS/Linux)
+
+Add to `~/.zshrc`:
+
+```zsh
+opencode() {
+  local config_dir="$HOME/.config/opencode"
+  
+  if [[ -d "$config_dir/.git" ]]; then
+    echo "Updating opencode config..."
+    git -C "$config_dir" pull --quiet
+  fi
+  
+  command opencode "$@"
+}
+```
+
+### Bash (Linux)
+
+Add to `~/.bashrc`:
+
+```bash
+opencode() {
+  local config_dir="$HOME/.config/opencode"
+  
+  if [[ -d "$config_dir/.git" ]]; then
+    echo "Updating opencode config..."
+    git -C "$config_dir" pull --quiet
+  fi
+  
+  command opencode "$@"
+}
+```
+
+### Windows Command Prompt
+
+Create a batch file `opencode.bat` in a directory in your PATH:
+
+```batch
+@echo off
+set CONFIG_DIR=%USERPROFILE%\.config\opencode
+
+if exist "%CONFIG_DIR%\.git" (
+    echo Updating opencode config...
+    git -C "%CONFIG_DIR%" pull --quiet
+)
+
+opencode %*
+```
+
+### PowerShell (Windows)
+
+Add to your PowerShell profile (`$PROFILE`):
+
+```powershell
+function opencode {
+    $configDir = "$env:USERPROFILE\.config\opencode"
+    
+    if (Test-Path "$configDir\.git") {
+        Write-Host "Updating opencode config..."
+        git -C $configDir pull --quiet
+    }
+    
+    & command opencode @args
+}
+```
+
+After adding the wrapper, restart your shell or reload your profile. Now every time you run `opencode`, it will automatically pull the latest configuration changes before starting.
