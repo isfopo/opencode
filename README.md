@@ -104,7 +104,7 @@ opencode web
 
 ## Auto-Update on Launch
 
-OpenCode doesn't have built-in pre-initialization hooks, but you can create a shell wrapper that automatically pulls the latest configuration before starting.
+To ensure the latest config updates are on the machine you're using you can create a shell wrapper that automatically pulls the latest configuration before starting.
 
 ### Zsh (macOS/Linux)
 
