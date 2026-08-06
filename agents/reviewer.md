@@ -1,7 +1,8 @@
 ---
 description: Reviews proposed or completed changes for correctness, regressions, security, tests, and maintainability. Use before delivery or when confidence is low.
 mode: subagent
-hidden: false
+hidden: true
+steps: 25
 color: warning
 permission:
   "*": ask

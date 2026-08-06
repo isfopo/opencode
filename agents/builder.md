@@ -1,7 +1,8 @@
 ---
 description: Implements an approved plan in small reversible increments and verifies each step. Use only after the human-approved approach is clear.
 mode: subagent
-hidden: false
+hidden: true
+steps: 40
 color: success
 permission:
   "*": ask
