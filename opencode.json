@@ -1,5 +1,17 @@
 {
   "$schema": "https://opencode.ai/config.json",
+  "default_agent": "conductor",
+  "subagent_depth": 1,
+  "share": "manual",
+  "agent": {
+    "conductor": {
+      "mode": "primary",
+      "description": "Conversational lead that coordinates specialists while keeping the human in control."
+    }
+  },
+  "experimental": {
+    "primary_tools": ["question"]
+  },
   "provider": {
     "manifest": {
       "npm": "@ai-sdk/openai-compatible",
