@@ -1,6 +1,6 @@
 ---
 description: Comprehensive project status briefing
-agent: scout
+agent: researcher
 ---
 
 Give me a thorough briefing on the current state of the project. I need the full picture — not just recent changes, but how everything fits together and where we stand overall.

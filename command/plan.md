@@ -1,6 +1,6 @@
 ---
 description: Plan out epics and tasks for the project
-agent: manager
+agent: conductor
 ---
 
 Plan out the work for this project as a structured set of epics and tasks. Be detailed and sequential — start with project setup and foundational work, then move through core features to polish and release.

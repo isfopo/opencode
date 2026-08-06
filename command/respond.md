@@ -1,6 +1,6 @@
 ---
 description: Respond to PR review comments and fix issues
-agent: worker
+agent: conductor
 ---
 
 Address the review comments on PR $ARGUMENTS. Work through each comment methodically — evaluate whether it's valid, fix what needs fixing, and push the changes.

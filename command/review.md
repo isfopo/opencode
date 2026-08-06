@@ -1,6 +1,6 @@
 ---
 description: Review a pull request for quality and correctness
-agent: critic
+agent: reviewer
 ---
 
 Review PR $ARGUMENTS thoroughly. Evaluate the code for correctness, quality, maintainability, and adherence to project conventions. Be constructive and specific — every comment should explain why something is an issue and suggest a fix.

@@ -1,6 +1,6 @@
 ---
 description: List and review open pull requests
-agent: worker
+agent: conductor
 ---
 
 Show me all open pull requests for this project with enough detail to understand the current state of review and what needs attention.

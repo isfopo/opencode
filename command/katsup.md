@@ -1,6 +1,6 @@
 ---
 description: Quick catch-up on recent project changes
-agent: scout
+agent: researcher
 ---
 
 I've been away and need a quick catch-up on what's happened. Skip the full project overview — just give me the highlights of recent activity and what I should focus on next.

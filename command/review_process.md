@@ -1,6 +1,6 @@
 ---
 description: Iteratively review and respond to a PR until all concerns are addressed
-agent: worker
+agent: conductor
 ---
 
 Run an iterative review-respond cycle on PR $ARGUMENTS. Alternate between reviewing the PR and addressing feedback until every concern — including minor ones — has been resolved. Escalate decisions that require human judgment.
@@ -10,7 +10,7 @@ Run an iterative review-respond cycle on PR $ARGUMENTS. Alternate between review
 Repeat the following cycle until no new concerns are found:
 
 ### Phase 1: Review
-- Use the @critic subagent to run a thorough review of the current PR state
+- Use the @reviewer subagent to run a thorough review of the current PR state
 - The critic should categorize every finding:
   - **Code fix** — Can be addressed directly in code (logic, style, tests, docs)
   - **Design decision** — Requires architectural or product-level judgment
@@ -32,7 +32,7 @@ Wait for human responses on any escalated items before proceeding. Apply their d
 - Push changes and reply to review comments
 
 ### Phase 4: Check Completion
-- Use the @critic subagent to run another review pass on the updated PR
+- Use the @reviewer subagent to run another review pass on the updated PR
 - If new concerns are found → return to Phase 2
 - If no new concerns are found → the loop is complete
 

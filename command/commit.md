@@ -1,7 +1,6 @@
 ---
 description: Commit and push current work with a well-crafted commit message
-agent: committer
-model: opencode-go/deepseek-v4-flash
+agent: conductor
 ---
 
 Commit the current work and push it to the remote repository.

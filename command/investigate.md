@@ -1,6 +1,6 @@
 ---
 description: Deep dive into a specific issue or bug
-agent: detective
+agent: researcher
 ---
 
 Investigate $ARGUMENTS thoroughly. Treat this like a forensic investigation — gather evidence, trace root causes, and present findings that let the conclusion speak for itself.

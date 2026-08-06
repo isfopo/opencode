@@ -1,6 +1,6 @@
 ---
 description: Create a new GitHub issue with a well-structured description
-agent: manager
+agent: conductor
 ---
 
 Create a new GitHub issue for this project.

@@ -1,6 +1,6 @@
 ---
 description: Write a README.md in the specified folder (root if not specified)
-agent: documenter
+agent: builder
 ---
 
 Write a README.md file for the project or module.

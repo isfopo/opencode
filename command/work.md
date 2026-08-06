@@ -1,6 +1,6 @@
 ---
 description: Implement a solution to a GitHub issue
-agent: worker
+agent: conductor
 ---
 
 Implement a solution for issue $ARGUMENTS in the current repository. Work through it methodically — understand the problem, plan the approach, implement, test, and ship it.
@@ -15,7 +15,7 @@ Implement a solution for issue $ARGUMENTS in the current repository. Work throug
 - [ ] Run the type checker if applicable and resolve any errors
 - [ ] Run the full test suite and ensure everything passes
 - [ ] Review your own changes — read through the diff as if you were reviewing someone else's code
-- [ ] Run a QA audit with @assurance subagent to catch anything you missed
+- [ ] Run an independent QA audit with @reviewer subagent to catch anything you missed
 - [ ] Create a pull request with a clear description linking back to the issue
 
 PR description template:

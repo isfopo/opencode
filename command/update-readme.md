@@ -1,6 +1,6 @@
 ---
 description: Update the README based on changes in a merged or open PR
-agent: documenter
+agent: builder
 ---
 
 Update the project README.md and any other README.md or documentation to reflect changes introduced by PR $ARGUMENTS or the current branch.

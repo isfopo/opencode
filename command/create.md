@@ -1,6 +1,6 @@
 ---
 description: Create a new repo and set up the first issues
-agent: manager
+agent: conductor
 ---
 
 Create a new repository called "$ARGUMENTS" and set it up with a solid foundation for development.

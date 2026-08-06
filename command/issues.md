@@ -1,6 +1,6 @@
 ---
 description: List and prioritize open issues
-agent: manager
+agent: conductor
 ---
 
 Show me all open issues for this project, organized by priority so I can see what needs attention first.
