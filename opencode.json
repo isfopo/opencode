@@ -30,11 +30,13 @@
     "mcpjungle": {
       "enabled": true,
       "type": "remote",
+      "timeout": 15000,
       "url": "https://tools.lhun.net/mcp"
     },
     "chrome-devtools": {
-      "command": ["npx", "-y", "chrome-devtools-mcp@latest"],
+      "command": ["npx", "-y", "chrome-devtools-mcp@1.6.0"],
       "enabled": true,
+      "timeout": 15000,
       "type": "local"
     }
   }

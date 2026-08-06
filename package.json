@@ -1,6 +1,10 @@
 {
+  "scripts": {
+    "validate": "node scripts/validate-setup.mjs",
+    "smoke": "npm run validate && node --check plugin/notification.js"
+  },
   "dependencies": {
-    "@ai-sdk/openai-compatible": "^3.0.5",
-    "@opencode-ai/plugin": "1.17.13"
+    "@ai-sdk/openai-compatible": "3.0.5",
+    "@opencode-ai/plugin": "1.18.13"
   }
 }
