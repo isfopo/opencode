@@ -26,6 +26,7 @@
       }
     }
   },
+  "plugin": ["opencode-mem", "opencode-worktree", "opencode-notify"],
   "mcp": {
     "mcpjungle": {
       "enabled": true,

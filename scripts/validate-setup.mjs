@@ -5,6 +5,8 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const configPath = path.join(root, "opencode.json");
 const config = JSON.parse(fs.readFileSync(configPath, "utf8"));
+const packagePath = path.join(root, "package.json");
+const packageConfig = JSON.parse(fs.readFileSync(packagePath, "utf8"));
 
 const failures = [];
 const assert = (condition, message) => {
@@ -33,7 +35,8 @@ for (const agent of agentNames) {
   }
 }
 
-assert(fs.existsSync(path.join(root, "plugin", "notification.js")), "notification plugin is missing");
+assert(config.plugin?.includes("opencode-notify"), "opencode-notify plugin must be configured");
+assert(packageConfig.dependencies?.["opencode-notify"], "opencode-notify dependency is missing");
 
 const commandDir = path.join(root, "command");
 for (const file of fs.readdirSync(commandDir).filter((name) => name.endsWith(".md"))) {
