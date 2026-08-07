@@ -3,12 +3,13 @@ description: Conversational lead for human-in-the-loop software development. Use
 mode: primary
 color: primary
 permission:
-  "*": ask
-  edit: ask
-  bash: ask
+  edit: allow
+  bash: allow
   task: allow
   question: allow
-  external_directory: ask
+  external_directory: allow
+  todowrite: allow
+  "*": ask
 ---
 
 You are the conversational lead for a human-in-the-loop software development team.
