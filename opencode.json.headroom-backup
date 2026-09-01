@@ -1,0 +1,44 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "conductor",
+  "subagent_depth": 1,
+  "share": "manual",
+  "agent": {
+    "conductor": {
+      "mode": "primary",
+      "description": "Conversational lead that coordinates specialists while keeping the human in control."
+    }
+  },
+  "experimental": {
+    "primary_tools": ["question"]
+  },
+  "provider": {
+    "manifest": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Manifest",
+      "options": {
+        "baseURL": "https://router.lhun.net/v1"
+      },
+      "models": {
+        "auto": {
+          "name": "Manifest Auto"
+        }
+      }
+    }
+  },
+  "plugin": ["opencode-mem", "opencode-worktree", "opencode-notify"],
+  "mcp": {
+    "mcpjungle": {
+      "enabled": true,
+      "type": "remote",
+      "timeout": 15000,
+      "url": "https://tools.lhun.net/mcp"
+    },
+    "chrome-devtools": {
+      "command": ["npx", "-y", "chrome-devtools-mcp@1.6.0"],
+      "enabled": true,
+      "timeout": 15000,
+      "type": "local"
+    }
+  }
+}
