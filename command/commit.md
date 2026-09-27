@@ -21,10 +21,9 @@ Full checklist:
 - [ ] Determine the correct conventional commit type (feat, fix, docs, style, refactor, test, chore, perf, ci) based on the nature of the changes
 - [ ] Write a commit message that explains WHY the change was made, not just WHAT changed — the diff already shows what changed
 - [ ] Stage only the appropriate files and create atomic commit(s)
-- [ ] Run focused verification, inspect the resulting commit(s), and push only after the checks pass
 
 Commit message rules:
-- Subject line: 50 characters or less, imperative mood ("add" not "added")
+- Subject line: 30 characters or less, imperative style ("add" not "added")
 - Use conventional commit prefixes: feat, fix, docs, style, refactor, test, chore, perf, ci
 - Body (optional): wrap at 72 characters, explain the motivation for the change
 - Reference issues with `Closes #123` or `Refs #123` when applicable
