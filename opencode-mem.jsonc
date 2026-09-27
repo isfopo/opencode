@@ -105,8 +105,8 @@
    //   OpenAI (API key):          "opencodeProvider": "openai",          "opencodeModel": "gpt-4o-mini"
    //   GitHub Copilot:            "opencodeProvider": "github-copilot",  "opencodeModel": "gpt-4o-mini"
    //
-   // "opencodeProvider": "anthropic",
-   // "opencodeModel": "claude-haiku-4-5-20251001",
+   "opencodeProvider": "manifest",
+   "opencodeModel": "micro",
 
    // ============================================
    // Auto-Capture Settings

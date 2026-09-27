@@ -3,10 +3,33 @@
   "default_agent": "conductor",
   "subagent_depth": 1,
   "share": "manual",
+  "small_model": "manifest/micro",
+  "tools": {
+    "*mcpjungle*plane-code-projects*": false,
+    "*mcpjungle*plane-creative-projects*": false,
+    "*mcpjungle*plane-home-improvement*": false,
+    "*mcpjungle*plane-self-improvement*": false
+  },
   "agent": {
     "conductor": {
       "mode": "primary",
+      "model": "manifest/fast",
       "description": "Conversational lead that coordinates specialists while keeping the human in control."
+    },
+    "title": {
+      "permission": {
+        "*": "deny"
+      }
+    },
+    "summary": {
+      "permission": {
+        "*": "deny"
+      }
+    },
+    "compaction": {
+      "permission": {
+        "*": "deny"
+      }
     }
   },
   "experimental": {
@@ -19,11 +42,64 @@
       "npm": "@ai-sdk/openai-compatible",
       "name": "Manifest",
       "options": {
-        "baseURL": "https://router.lhun.net/v1"
+        "baseURL": "https://router.lhun.net/v1",
+        "timeout": 170000,
+        "headerTimeout": 160000
       },
       "models": {
         "auto": {
-          "name": "Manifest Auto"
+          "id": "auto",
+          "name": "Manifest Auto",
+          "headers": {
+            "x-session-key": "opencode-main"
+          }
+        },
+        "deep": {
+          "id": "auto",
+          "name": "Manifest Deep (reasoning)",
+          "headers": {
+            "x-manifest-tier": "deep",
+            "x-session-key": "opencode-deep"
+          }
+        },
+        "fast": {
+          "id": "auto",
+          "name": "Manifest Fast (coding)",
+          "headers": {
+            "x-manifest-tier": "fast",
+            "x-session-key": "opencode-fast"
+          }
+        },
+        "micro": {
+          "id": "auto",
+          "name": "Manifest Micro (titles/mem)",
+          "headers": {
+            "x-manifest-tier": "micro",
+            "x-session-key": "opencode-micro"
+          }
+        }
+      }
+    },
+    "headroom": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Headroom Proxy",
+      "options": {
+        "baseURL": "http://127.0.0.1:8787/v1"
+      },
+      "models": {
+        "gpt-4o": {
+          "name": "GPT-4o",
+          "limit": {
+            "context": 128000,
+            "output": 16384
+          }
+        },
+        "gpt-4.1": {
+          "name": "GPT-4.1",
+          "limit": {
+            "context": 1048576,
+            "output": 32768
+          }
         }
       }
     },
@@ -61,7 +137,7 @@
       "enabled": true,
       "type": "remote",
       "timeout": 15000,
-      "url": "https://tools.lhun.net/mcp"
+      "url": "https://tools.lhun.net/v0/groups/engineeering/mcp"
     },
     "chrome-devtools": {
       "command": [
@@ -76,7 +152,7 @@
     "headroom": {
       "type": "local",
       "command": [
-        "C:\\Users\\ipoole\\.local\\bin\\headroom.EXE",
+        "C:\\Users\\isaac\\.local\\bin\\headroom.EXE",
         "mcp",
         "serve"
       ],
