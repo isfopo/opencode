@@ -10,6 +10,22 @@
     "*mcpjungle*plane-home-improvement*": false,
     "*mcpjungle*plane-self-improvement*": false
   },
+  "formatter": {
+    "prettier": {
+      "command": [
+        "npx",
+        "prettier",
+        "--write",
+        "$FILE"
+      ],
+      "extensions": [
+        ".js",
+        ".ts",
+        ".jsx",
+        ".tsx"
+      ]
+    }
+  },
   "agent": {
     "conductor": {
       "mode": "primary",
@@ -76,29 +92,6 @@
           "headers": {
             "x-manifest-tier": "micro",
             "x-session-key": "opencode-micro"
-          }
-        }
-      }
-    },
-    "headroom": {
-      "npm": "@ai-sdk/openai-compatible",
-      "name": "Headroom Proxy",
-      "options": {
-        "baseURL": "http://127.0.0.1:8787/v1"
-      },
-      "models": {
-        "gpt-4o": {
-          "name": "GPT-4o",
-          "limit": {
-            "context": 128000,
-            "output": 16384
-          }
-        },
-        "gpt-4.1": {
-          "name": "GPT-4.1",
-          "limit": {
-            "context": 1048576,
-            "output": 32768
           }
         }
       }
