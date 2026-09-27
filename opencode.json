@@ -7,7 +7,22 @@
     "read": "allow",
     "glob": "allow",
     "grep": "allow",
-    "list": "allow"
+    "list": "allow",
+    "bash": {
+      "git *": "allow",
+      "Get-Content *": "allow",
+      "Get-ChildItem *": "allow",
+      "Get-ChildItem": "allow",
+      "Select-String *": "allow",
+      "Get-Item *": "allow",
+      "Test-Path *": "allow",
+      "cat *": "allow",
+      "type *": "allow",
+      "ls *": "allow",
+      "ls": "allow",
+      "dir *": "allow",
+      "dir": "allow"
+    }
   },
   "small_model": "manifest/micro",
   "tools": {
