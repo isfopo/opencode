@@ -130,7 +130,7 @@
       "enabled": true,
       "type": "remote",
       "timeout": 15000,
-      "url": "https://tools.lhun.net/v0/groups/engineeering/mcp"
+      "url": "https://tools.lhun.net/v0/groups/engineering/mcp"
     },
     "chrome-devtools": {
       "command": [
