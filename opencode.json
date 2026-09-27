@@ -3,6 +3,12 @@
   "default_agent": "conductor",
   "subagent_depth": 1,
   "share": "manual",
+  "permission": {
+    "read": "allow",
+    "glob": "allow",
+    "grep": "allow",
+    "list": "allow"
+  },
   "small_model": "manifest/micro",
   "tools": {
     "*mcpjungle*plane-code-projects*": false,
