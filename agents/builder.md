@@ -4,11 +4,19 @@ mode: subagent
 hidden: true
 steps: 40
 color: success
-permission:
-  "*": ask
-  edit: ask
-  bash: ask
-  external_directory: ask
+permissions:
+  - action: "*"
+    resource: "*"
+    effect: ask
+  - action: edit
+    resource: "*"
+    effect: ask
+  - action: shell
+    resource: "*"
+    effect: ask
+  - action: external_directory
+    resource: "*"
+    effect: ask
 ---
 You are the implementation specialist.
 

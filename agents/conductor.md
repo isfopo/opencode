@@ -2,14 +2,28 @@
 description: Conversational lead for human-in-the-loop software development. Use as the default coordinator for planning, delegation, implementation, and review.
 mode: primary
 color: primary
-permission:
-  edit: allow
-  bash: allow
-  task: allow
-  question: allow
-  external_directory: allow
-  todowrite: allow
-  "*": ask
+permissions:
+  - action: "*"
+    resource: "*"
+    effect: ask
+  - action: edit
+    resource: "*"
+    effect: allow
+  - action: shell
+    resource: "*"
+    effect: allow
+  - action: subagent
+    resource: "*"
+    effect: allow
+  - action: question
+    resource: "*"
+    effect: allow
+  - action: external_directory
+    resource: "*"
+    effect: allow
+  - action: todowrite
+    resource: "*"
+    effect: allow
 ---
 
 You are the conversational lead for a human-in-the-loop software development team.

@@ -3,8 +3,9 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const readText = (file) => fs.readFileSync(file, "utf8").replace(/\r\n/g, "\n");
 const configPath = path.join(root, "opencode.json");
-const config = JSON.parse(fs.readFileSync(configPath, "utf8"));
+const config = JSON.parse(readText(configPath));
 const packagePath = path.join(root, "package.json");
 const packageConfig = JSON.parse(fs.readFileSync(packagePath, "utf8"));
 
@@ -15,11 +16,15 @@ const assert = (condition, message) => {
 
 assert(config.$schema === "https://opencode.ai/config.json", "opencode.json must declare the official schema");
 assert(config.default_agent === "conductor", "default_agent must be conductor");
-assert(config.subagent_depth === 1, "subagent_depth must remain bounded at 1");
-assert(config.mcp?.mcpjungle?.timeout > 0, "mcpjungle must define a positive timeout");
-assert(config.mcp?.["chrome-devtools"]?.timeout > 0, "chrome-devtools must define a positive timeout");
+assert(config.experimental?.subagent_depth === 1, "experimental.subagent_depth must remain bounded at 1");
+const mcpjungleTimeout = config.mcp?.servers?.mcpjungle?.timeout;
+assert(mcpjungleTimeout?.catalog > 0, "mcpjungle must define a positive catalog timeout");
+assert(mcpjungleTimeout?.execution > 0, "mcpjungle must define a positive execution timeout");
+const chromeDevtoolsTimeout = config.mcp?.servers?.["chrome-devtools"]?.timeout;
+assert(chromeDevtoolsTimeout?.catalog > 0, "chrome-devtools must define a positive catalog timeout");
+assert(chromeDevtoolsTimeout?.execution > 0, "chrome-devtools must define a positive execution timeout");
 assert(
-  config.mcp?.["chrome-devtools"]?.command?.some((value) => value === "chrome-devtools-mcp@1.6.0"),
+  config.mcp?.servers?.["chrome-devtools"]?.command?.some((value) => value === "chrome-devtools-mcp@1.6.0"),
   "chrome-devtools MCP must use the pinned 1.6.0 version",
 );
 
@@ -29,18 +34,27 @@ for (const agent of agentNames) {
   const agentPath = path.join(root, "agents", `${agent}.md`);
   assert(fs.existsSync(agentPath), `missing agent file: agents/${agent}.md`);
   if (fs.existsSync(agentPath)) {
-    const contents = fs.readFileSync(agentPath, "utf8");
+    const contents = readText(agentPath);
     assert(contents.startsWith("---\n"), `agent lacks frontmatter: ${agent}`);
     assert(contents.includes("description:"), `agent lacks description: ${agent}`);
   }
 }
 
-assert(config.plugin?.includes("opencode-notify"), "opencode-notify plugin must be configured");
-assert(packageConfig.dependencies?.["opencode-notify"], "opencode-notify dependency is missing");
+const localPlugins = config.plugins?.map((plugin) =>
+  typeof plugin === "string" ? plugin : plugin?.package,
+);
+assert(
+  localPlugins?.includes("./plugins/notify"),
+  "local notify plugin must be configured",
+);
+assert(
+  fs.existsSync(path.join(root, "plugins", "notify", "index.js")),
+  "local notify plugin entrypoint is missing",
+);
 
-const commandDir = path.join(root, "command");
+const commandDir = path.join(root, "commands");
 for (const file of fs.readdirSync(commandDir).filter((name) => name.endsWith(".md"))) {
-  const contents = fs.readFileSync(path.join(commandDir, file), "utf8");
+  const contents = readText(path.join(commandDir, file));
   const frontmatter = contents.match(/^---\n([\s\S]*?)\n---/);
   const declaredAgent = frontmatter?.[1].match(/^agent:\s*([^\s]+)$/m)?.[1];
   if (declaredAgent) assert(agentNames.has(declaredAgent), `${file} references unknown agent: ${declaredAgent}`);

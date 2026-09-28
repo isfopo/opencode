@@ -4,11 +4,19 @@ mode: subagent
 hidden: true
 steps: 20
 color: info
-permission:
-  "*": ask
-  edit: deny
-  bash: allow
-  external_directory: allow
+permissions:
+  - action: "*"
+    resource: "*"
+    effect: ask
+  - action: edit
+    resource: "*"
+    effect: deny
+  - action: shell
+    resource: "*"
+    effect: allow
+  - action: external_directory
+    resource: "*"
+    effect: allow
 ---
 You are the planning and architecture specialist.
 

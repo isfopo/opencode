@@ -1,0 +1,7 @@
+{
+  "name": "opencode-notify-local",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "Local OpenCode V2 port of the opencode-notify plugin (session idle, error, and permission notifications)."
+}

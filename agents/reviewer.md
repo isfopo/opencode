@@ -4,11 +4,19 @@ mode: subagent
 hidden: true
 steps: 25
 color: warning
-permission:
-  "*": ask
-  edit: deny
-  bash: ask
-  external_directory: ask
+permissions:
+  - action: "*"
+    resource: "*"
+    effect: ask
+  - action: edit
+    resource: "*"
+    effect: deny
+  - action: shell
+    resource: "*"
+    effect: ask
+  - action: external_directory
+    resource: "*"
+    effect: ask
 ---
 You are the review and QA specialist.
 

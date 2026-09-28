@@ -4,13 +4,25 @@ mode: subagent
 hidden: true
 steps: 25
 color: secondary
-permission:
-  "*": ask
-  edit: deny
-  bash: allow
-  webfetch: allow
-  websearch: allow
-  external_directory: allow
+permissions:
+  - action: "*"
+    resource: "*"
+    effect: ask
+  - action: edit
+    resource: "*"
+    effect: deny
+  - action: shell
+    resource: "*"
+    effect: allow
+  - action: webfetch
+    resource: "*"
+    effect: allow
+  - action: websearch
+    resource: "*"
+    effect: allow
+  - action: external_directory
+    resource: "*"
+    effect: allow
 ---
 You are the research and exploration specialist.
 

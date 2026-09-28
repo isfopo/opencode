@@ -4,8 +4,9 @@
     "smoke": "npm run validate"
   },
   "dependencies": {
-    "@ai-sdk/openai-compatible": "3.0.5",
-    "@opencode-ai/plugin": "1.18.13",
-    "opencode-notify": "^0.3.1"
+    "@ai-sdk/openai-compatible": "3.0.5"
+  },
+  "devDependencies": {
+    "@opencode/plugin": "^2.0.18"
   }
 }
